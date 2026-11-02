@@ -1,18 +1,19 @@
 # AGENTS.md
 
-This public repository publishes reusable skills and commands for coding agents.
+This public repository publishes reusable skills, commands, and instruction snippets for coding agents.
 Everything committed here is world-readable, so every change MUST be safe to publish.
 
 ## Layout
 
 - `skills/<skill-name>/SKILL.md`: one directory per skill, with optional supporting files beside `SKILL.md`.
 - `commands/<command-name>.md`: one Markdown file per slash command.
+- `snippets/snippet-<name>.md`: one paste-ready instruction block per file, with a leading HTML comment on usage.
 - `skills/README.md` and `commands/README.md` own the file formats; keep them in sync with format changes.
 - `README.md` owns the repository overview and installation instructions.
 
 ## Skills
 
-- Directory names and the frontmatter `name` MUST match and use kebab-case.
+- Directory names and the frontmatter `name` MUST match, use kebab-case, and start with `skill-`.
 - The frontmatter `description` MUST state when to use the skill in one sentence.
 - A skill MUST work on its own and MUST NOT depend on files outside its directory.
 - Supporting scripts MUST run without private tools, accounts, or local configuration.
@@ -41,4 +42,4 @@ Everything committed here is world-readable, so every change MUST be safe to pub
 ## Commits
 
 - Use Conventional Commits, for example `feat(skills): add code-review skill`.
-- Use `skills`, `commands`, or `docs` as the scope.
+- Use `skills`, `commands`, `snippets`, or `docs` as the scope.
