@@ -28,3 +28,7 @@ ln -s "$PWD/agents-playbook/commands/<command-name>.md" ~/.claude/commands/<comm
 ```
 
 Symlinks keep installed items current after `git pull`.
+
+## License
+
+[MIT](LICENSE)
