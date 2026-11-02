@@ -9,7 +9,7 @@ Everything committed here is world-readable, so every change MUST be safe to pub
 - `commands/<command-name>.md`: one Markdown file per slash command.
 - `snippets/snippet-<name>.md`: one paste-ready instruction block per file, copied verbatim from its source.
 - `skills/README.md` and `commands/README.md` own the file formats; keep them in sync with format changes.
-- `README.md` owns the repository overview and installation instructions.
+- `README.md` owns the repository overview outside the generated section.
 - `scripts/generate-readme.py` owns the README section between the `GENERATED CONTENTS` markers; never edit it by hand.
 - The `Generate README` workflow runs the script and is triggered manually after adding or changing items.
 
