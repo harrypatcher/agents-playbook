@@ -16,23 +16,7 @@ $ARGUMENTS
 - Count words after the `—` marker only.
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
-- Format each line as `<span style="color:<hex>">●</span> **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
-- Color the dots in this order:
-
-  1. `#ff6a6c`
-  2. `#fe9032`
-  3. `#fbcc02`
-  4. `#9fe800`
-  5. `#0be274`
-  6. `#10d5bf`
-  7. `#13d3ef`
-  8. `#5ca5fe`
-  9. `#a789fe`
-  10. `#ec73fe`
-
-- After the tenth color, start again with the first.
-  For example, questions 11, 21, and 31 use color 1, and questions 12, 22, and 32 use color 2.
-- The colors only help the reader keep track of lines and carry no meaning.
+- Format each line as `**<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
 
 
 Generate context-specific hacker-style questions.

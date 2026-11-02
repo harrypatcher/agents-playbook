@@ -12,14 +12,13 @@
 - The block MUST be final, preceded by exactly one blank line, followed by nothing, and match this format exactly:
 
 ```
-<span style="color:#ff6a6c">●</span> **Q1** — [question]
-<span style="color:#fbcc02">●</span> **Q2** — [question]
-<span style="color:#0be274">●</span> **Q3** — [question]
-<span style="color:#13d3ef">●</span> **Q4** — [question]
-<span style="color:#a789fe">●</span> **Q5** — [question]
+**Q1** — [question]
+**Q2** — [question]
+**Q3** — [question]
+**Q4** — [question]
+**Q5** — [question]
 ```
 
-- Bullet colors only aid line tracking, carry no meaning, and target dark terminal backgrounds.
 - Q1–Q5 MUST be consecutive, with no blank lines between question lines.
 - A Q selection applies only to the immediately preceding block.
 - It MUST preserve that block's deliverable, target, scope, approval state, and read-only or mutating status.
