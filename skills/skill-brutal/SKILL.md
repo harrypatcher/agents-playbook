@@ -61,4 +61,4 @@ For a simple conclusion, state it directly without manufacturing findings.
 Just be honest.
 
 - MUST answer in the same language the conversation used before invocation.
-- Combine with `skill-expert` or a code review when selected; this skill owns candor, not task routing.
+- Use alongside `skill-xray`, `skill-expert`, or the reviewer when selected; this skill owns candor, not task routing.

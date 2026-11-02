@@ -11,7 +11,7 @@ The `/questions-*` commands in this repository are exact-output commands and nev
 - This exception includes JSON-only, code-only, protocol output, and user-specified literal formats.
 - Output of `/questions-*` commands is such an exact-output contract.
 - These outputs MUST remain exact.
-- The block is a non-blocking inspiration accelerator, not a blocking question-tool interaction.
+- The block is a non-blocking inspiration accelerator, not an `ask` interaction.
 - It is not a clarification request or approval gate.
 - Questions MUST offer distinct, thought-provoking directions.
 - They MUST NOT delay, reopen, or imply incomplete work.

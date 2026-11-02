@@ -7,7 +7,7 @@ Analyze the current work context.
 Surface expert-level insights, optimizations, or approaches the user might not see or know about.
 
 Generic codebase analysis does not select this skill.
-Adversarial blindspot analysis and general code review are out of scope.
+Blindspot or adversarial analysis belongs to `skill-xray`; general code review belongs to the reviewer agent.
 
 ## Context Detection
 
@@ -30,16 +30,22 @@ Rules:
 - Focus on immediately helpful expert knowledge that reduces complexity or improves quality now.
 - Show things that improve current work, not prevent future problems.
 - Do NOT suggest what's already implemented correctly.
-
 ## Language
 
-- Think and reason in English.
-- Answer in the language of the conversation.
-- Localize human-facing headings, labels, and values, but keep code-like tokens exact.
+- Thinking and reasoning MUST be in English.
+- Answer the user in natural German.
+- Canonical English field names define semantic identity and order, not the rendered language.
+- Localize human-facing headings, labels, categories, values, and examples into idiomatic German.
+- Keep a human-facing token exact only when the command marks it as literal or machine-readable.
+- Preserve the canonical contract's structure, order, meaning, modality, and completeness.
+- Keep machine formats and code-like tokens exact.
+- Never emit parallel English and German schemas.
+- Retain English technical terms when German is less precise or natural.
+
 
 ## Output Format
 
-Present each insight in readable Markdown in the conversation language.
+Present each insight in readable German Markdown.
 Keep the existing insight categories, explanations, optional examples, and `Impact` content unchanged.
 Render the existing numbered title as a level-two Markdown heading with its context and name.
 Keep the existing `MISSING` or `ALREADY DOING` statement and its meaning.

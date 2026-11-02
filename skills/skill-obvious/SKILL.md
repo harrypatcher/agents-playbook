@@ -13,16 +13,20 @@ It proposes moves but never implements or mutates state.
 
 ## Internal Review
 
-Before discovery, load the sibling `skill-expert` and `skill-brutal` skills when they are installed.
+Before discovery, explicitly read:
 
-Use three internal review lenses:
+- `skill://skill-xray`
+- `skill://skill-expert`
+- `skill://skill-brutal`
 
-- Blindspot lens: generate broadly, attack assumptions, and expose blindspots.
-- `skill-expert` lens: find expert techniques and verify current applicability.
-- `skill-brutal` lens: reject generic, inflated, obvious-by-renaming, or fake-leverage candidates.
+Use each skill only as an internal review lens:
+
+- `skill-xray` generates broadly, attacks assumptions, and exposes blindspots.
+- `skill-expert` finds expert techniques and verifies current applicability.
+- `skill-brutal` rejects generic, inflated, obvious-by-renaming, or fake-leverage candidates.
 
 This skill owns the final user-visible classification, evidence gates, ranking, and output format when primary.
-The lenses are internal only.
+`skill-xray`, `skill-expert`, and `skill-brutal` are internal review lenses only.
 Their analysis, tone, headings, and output formats MUST NOT appear in the final response.
 Higher-priority routing remains authoritative.
 
@@ -186,10 +190,21 @@ If no candidate survives, output only the localized equivalent of `No strong hig
 
 ## Scope Boundaries
 
+Use `/tips` for a broad uncategorized tip inventory when obvious/non-obvious classification does not matter.
 Use `skill-expert` for expert-practice or code/config review rather than broad practical-move discovery.
-
+Use `skill-xray` for adversarial critique, blindspots, and improvement analysis rather than a move inventory.
+Use `/insider` when every finding must be genuinely obscure and supported by Novelty Evidence.
+Use competitive-advantage skills for market position, defensibility, copyability, and competitive edge.
 ## Language
 
-- Think and reason in English.
-- Answer in the language of the conversation.
-- Localize human-facing headings, labels, and values, but keep code-like tokens exact.
+- Thinking and reasoning MUST be in English.
+- Answer the user in natural German.
+- Canonical English field names define semantic identity and order, not the rendered language.
+- Localize human-facing headings, labels, categories, values, and examples into idiomatic German.
+- Keep a human-facing token exact only when the command marks it as literal or machine-readable.
+- Preserve the canonical contract's structure, order, meaning, modality, and completeness.
+- Keep machine formats and code-like tokens exact.
+- Never emit parallel English and German schemas.
+- Retain English technical terms when German is less precise or natural.
+
+General code review belongs to the reviewer agent.
