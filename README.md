@@ -12,7 +12,7 @@ skills/
 commands/
   <command-name>.md # slash command prompt
 snippets/
-  snippet-<name>.md # instruction block to paste into AGENTS.md or CLAUDE.md
+  snippet-<name>.md # instruction block to paste into your agent's global instructions
 ```
 
 - [`skills/`](skills/): self-contained capabilities that an agent loads when a task matches the skill description.
@@ -21,14 +21,15 @@ snippets/
 
 ## Installation
 
-Copy or symlink the items you want into your agent's configuration directory.
-For Claude Code:
+Copy or symlink the items you want into the matching directories of your agent.
 
 ```bash
 git clone https://github.com/harrypatcher/agents-playbook.git
-ln -s "$PWD/agents-playbook/skills/<skill-name>" ~/.claude/skills/<skill-name>
-ln -s "$PWD/agents-playbook/commands/<command-name>.md" ~/.claude/commands/<command-name>.md
+ln -s "$PWD/agents-playbook/skills/<skill-name>" <agent-skills-dir>/<skill-name>
+ln -s "$PWD/agents-playbook/commands/<command-name>.md" <agent-commands-dir>/<command-name>.md
 ```
+
+Paste snippets into your agent's global instruction file, such as `AGENTS.md`.
 
 Symlinks keep installed items current after `git pull`.
 
