@@ -1,9 +1,3 @@
-<!--
-Q1–Q5 follow-up questions for coding agents.
-Paste everything below this comment into a global AGENTS.md, CLAUDE.md, or system prompt.
-The `/questions-*` commands in this repository are exact-output commands and never receive the block.
--->
-
 ## Q1–Q5 Contract
 
 - Every conversational response, including skill and slash-command output, MUST end with exactly one Q1–Q5 block.
@@ -15,8 +9,6 @@ The `/questions-*` commands in this repository are exact-output commands and nev
 - It is not a clarification request or approval gate.
 - Questions MUST offer distinct, thought-provoking directions.
 - They MUST NOT delay, reopen, or imply incomplete work.
-- Keep required actions and in-scope leverage in the response body.
-- Put optional scope extensions only in the Q1–Q5 block.
 - The block MUST be final, preceded by exactly one blank line, followed by nothing, and match this format exactly:
 
 ```
