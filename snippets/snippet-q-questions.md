@@ -1,0 +1,46 @@
+<!--
+Q1–Q5 follow-up questions for coding agents.
+Paste everything below this comment into a global AGENTS.md, CLAUDE.md, or system prompt.
+The `/questions-*` commands in this repository are exact-output commands and never receive the block.
+-->
+
+## Q1–Q5 Contract
+
+- Every conversational response, including skill and slash-command output, MUST end with exactly one Q1–Q5 block.
+- Exact-output contracts are the only exception and MUST NOT receive the Q1–Q5 block.
+- This exception includes JSON-only, code-only, protocol output, and user-specified literal formats.
+- Output of `/questions-*` commands is such an exact-output contract.
+- These outputs MUST remain exact.
+- The block is a non-blocking inspiration accelerator, not a blocking question-tool interaction.
+- It is not a clarification request or approval gate.
+- Questions MUST offer distinct, thought-provoking directions.
+- They MUST NOT delay, reopen, or imply incomplete work.
+- Keep required actions and in-scope leverage in the response body.
+- Put optional scope extensions only in the Q1–Q5 block.
+- The block MUST be final, preceded by exactly one blank line, followed by nothing, and match this format exactly:
+
+```
+<span style="color:#ff6a6c">●</span> **Q1** — [question]
+<span style="color:#fbcc02">●</span> **Q2** — [question]
+<span style="color:#0be274">●</span> **Q3** — [question]
+<span style="color:#13d3ef">●</span> **Q4** — [question]
+<span style="color:#a789fe">●</span> **Q5** — [question]
+```
+
+- Bullet colors only aid line tracking, carry no meaning, and target dark terminal backgrounds.
+- Q1–Q5 MUST be consecutive, with no blank lines between question lines.
+- A Q selection applies only to the immediately preceding block.
+- It MUST preserve that block's deliverable, target, scope, approval state, and read-only or mutating status.
+- Explicit target or scope in the latest user message overrides an assistant-authored Q-block.
+- Bare yes/no and single-word replies are actionable only when exactly one preceding question matches.
+- Fulfill an unambiguous Q selection without `?` immediately, without restating or confirming it.
+- A Q selection with `?` requests evaluation, not execution.
+- Work-offering Q questions MUST distinguish returning a proposal or artifact from applying it to a target.
+- Proposing a Q MUST NOT authorize implementation.
+- Selecting a Q that offers to apply a named change authorizes exactly that change, target, and scope.
+- Put any material target or scope conflict before the block.
+- Ask only for the unresolved choice.
+- Follow-up questions SHOULD deepen the current topic.
+- The question-length pyramid SHOULD target approximately 7, 9, 11, 13, and 14 words for Q1–Q5.
+- Count question words after the `—` marker; Markdown labels, punctuation, and the `Qn` marker do not count.
+- Each question MUST NOT exceed 14 words.

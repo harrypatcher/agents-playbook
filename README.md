@@ -1,6 +1,6 @@
 # agents-playbook
 
-Reusable skills and commands for coding agents.
+Reusable skills, commands, and instruction snippets for coding agents.
 
 ## Layout
 
@@ -11,10 +11,13 @@ skills/
     ...             # optional scripts, references, or templates
 commands/
   <command-name>.md # slash command prompt
+snippets/
+  snippet-<name>.md # instruction block to paste into AGENTS.md or CLAUDE.md
 ```
 
 - [`skills/`](skills/): self-contained capabilities that an agent loads when a task matches the skill description.
 - [`commands/`](commands/): prompts that you invoke explicitly as slash commands.
+- [`snippets/`](snippets/): always-on rules that you paste into a global instruction file.
 
 ## Installation
 
