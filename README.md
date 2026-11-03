@@ -20,6 +20,7 @@ commands/                                # invoked as slash commands
   /questions-hacker                      Generates context-specific hacker-style questions using unconventional but practical approaches.
   /questions-inspiration                 Generates context-specific inspiration questions that open distinct, thought-provoking directions like the Q1–Q5 block.
   /questions-monetization                Generates context-specific monetization questions that uncover concrete and practical revenue mechanisms.
+  /questions-optimization                Generates context-specific optimization questions that find where the current work can become faster, cheaper, or more efficient.
   /questions-proposal                    Generates context-specific proposal questions that offer concrete next actions for selection.
   /questions-solution                    Generates context-specific solution questions that identify plausible implementation failures and root-cause fixes.
   /questions-subtract                    Generates context-specific subtraction questions that find what to cut, defer, or never build without losing value.
