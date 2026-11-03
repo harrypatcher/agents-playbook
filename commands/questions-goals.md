@@ -18,6 +18,9 @@ $ARGUMENTS
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
 - Format each line as `• **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
+- Draft more candidates internally than requested and drop near-duplicates.
+- Order the questions by expected impact, strongest first, unless the command defines another order.
+- A later selection such as `<prefix><number>` follows the Q selection rules and refers to this list.
 
 
 Generate context-specific goal questions that work like an extended Q1–Q5 block focused on the user's goals.
@@ -36,7 +39,6 @@ Generate context-specific goal questions that work like an extended Q1–Q5 bloc
 - Never invent goals, metrics, or deadlines the context does not support.
 - Exclude generic goal-setting frameworks and questions that delay, reopen, or imply incomplete work.
 - Propose only and never implement, execute, or modify files in this response.
-- A later selection of one of these questions follows the Q selection rules and refers to this list.
 
 THINK HARD and THINK HARDER and ULTRATHINK.
 

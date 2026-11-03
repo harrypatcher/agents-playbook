@@ -18,6 +18,9 @@ $ARGUMENTS
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
 - Format each line as `• **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
+- Draft more candidates internally than requested and drop near-duplicates.
+- Order the questions by expected impact, strongest first, unless the command defines another order.
+- A later selection such as `<prefix><number>` follows the Q selection rules and refers to this list.
 
 
 Generate context-specific second-order questions that look past the immediate effect to what follows from it.

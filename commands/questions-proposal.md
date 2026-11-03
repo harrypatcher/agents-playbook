@@ -18,6 +18,9 @@ $ARGUMENTS
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
 - Format each line as `• **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
+- Draft more candidates internally than requested and drop near-duplicates.
+- Order the questions by expected impact, strongest first, unless the command defines another order.
+- A later selection such as `<prefix><number>` follows the Q selection rules and refers to this list.
 
 
 Generate context-specific proposal questions that each offer one concrete action the user can select.
@@ -28,11 +31,9 @@ Generate context-specific proposal questions that each offer one concrete action
 - Name the concrete target, change, or deliverable in each question.
 - Make clear whether the offer returns a proposal or artifact, or applies a change to a target.
 - Prefer unfinished, feasible actions that resolve blockers or create immediate value.
-- Order the questions by expected value, strongest first.
 - Ground every offer in the context and never invent files, tools, or requirements.
 - Exclude rhetorical questions, open-ended inquiries, clarification requests, and offers that repeat completed work.
 - Propose only and never implement, execute, or modify files in this response.
-- A later selection of a `P` question follows the same rules as a Q selection.
 
 THINK HARD and THINK HARDER and ULTRATHINK.
 
