@@ -16,12 +16,15 @@ commands/                                # invoked as slash commands
   /questions-agents-check-understanding  Generates context-specific self-check questions the agent should ask itself to test whether it fully understood the request.
   /questions-decision                    Generates context-specific decision questions that sharpen concrete choices and trade-offs.
   /questions-first-principles            Generates context-specific first-principles questions that expose fundamental truths and assumptions.
+  /questions-future-self                 Generates context-specific future-self questions that expose what the current work will cost whoever maintains it months from now.
   /questions-goals                       Generates context-specific, thought-provoking questions focused on the user's goals and whether the current work serves them.
   /questions-hacker                      Generates context-specific hacker-style questions using unconventional but practical approaches.
   /questions-inspiration                 Generates context-specific inspiration questions that open distinct, thought-provoking directions like the Q1–Q5 block.
   /questions-monetization                Generates context-specific monetization questions that uncover concrete and practical revenue mechanisms.
   /questions-optimization                Generates context-specific optimization questions that find where the current work can become faster, cheaper, or more efficient.
+  /questions-prior-art                   Generates context-specific prior-art questions that find existing solutions, standards, and tools before building custom work.
   /questions-proposal                    Generates context-specific proposal questions that offer concrete next actions for selection.
+  /questions-second-order                Generates context-specific second-order questions that expose indirect, delayed, and feedback-driven consequences of the current work.
   /questions-solution                    Generates context-specific solution questions that identify plausible implementation failures and root-cause fixes.
   /questions-subtract                    Generates context-specific subtraction questions that find what to cut, defer, or never build without losing value.
   /questions-unethical                   Generates context-specific unethical questions that expose aggressive but practical code and product advantages.
