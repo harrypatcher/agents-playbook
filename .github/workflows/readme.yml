@@ -2,28 +2,35 @@
 name: Generate README
 
 on:
-  workflow_dispatch:
+    workflow_dispatch:
 
 permissions:
-  contents: write
+    contents: write
+
+# A newer run regenerates from a newer checkout, so an older in-flight run is redundant.
+concurrency:
+    group: ${{ github.workflow }}
+    cancel-in-progress: true
 
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
+    generate:
+        # The 1-vCPU container runner starts faster than a full VM and ships python3 and git.
+        runs-on: ubuntu-slim
+        timeout-minutes: 5
+        steps:
+            - uses: actions/checkout@v7
 
-      - name: Generate contents section
-        run: python3 scripts/generate-readme.py
+            - name: Generate contents section
+              run: python3 scripts/generate-readme.py
 
-      - name: Commit changed README
-        run: |
-          if git diff --quiet -- README.md; then
-            echo "README.md: unchanged"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "docs(readme): regenerate contents"
-          git push
+            - name: Commit changed README
+              run: |
+                  if git diff --quiet -- README.md; then
+                    echo "README.md: unchanged"
+                    exit 0
+                  fi
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add README.md
+                  git commit -m "docs(readme): regenerate contents"
+                  git push
