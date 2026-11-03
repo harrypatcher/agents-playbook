@@ -1,0 +1,10 @@
+{
+    "name": "agents-playbook",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Reusable skills, commands, and instruction snippets for Claude.",
+    "scripts": {
+        "readme": "python3 scripts/generate-readme.py",
+        "package": "python3 scripts/package-skills.py"
+    }
+}
