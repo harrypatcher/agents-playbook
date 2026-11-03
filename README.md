@@ -20,6 +20,7 @@ commands/                      # invoked as slash commands
   /questions-monetization      Generates context-specific monetization questions that uncover concrete and practical revenue mechanisms.
   /questions-proposal          Generates context-specific proposal questions that offer concrete next actions for selection.
   /questions-solution          Generates context-specific solution questions that identify plausible implementation failures and root-cause fixes.
+  /questions-subtract          Generates context-specific subtraction questions that find what to cut, defer, or never build without losing value.
   /questions-unethical         Generates context-specific unethical questions that expose aggressive but practical code and product advantages.
   /questions-user              Generates context-specific user questions that expose how the current work affects the people who use it.
   /questions-verification      Generates context-specific verification questions focused on decisive, falsifiable evidence.
