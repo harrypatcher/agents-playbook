@@ -41,11 +41,11 @@ Use the local `Q` prefix.
 ## Language
 
 - Thinking and reasoning MUST be in English.
-- Answer the user in natural German.
+- Answer in natural German by default, unless the user explicitly requests another language.
 - Canonical English field names define semantic identity and order, not the rendered language.
-- Localize human-facing headings, labels, categories, values, and examples into idiomatic German.
+- Localize human-facing headings, labels, categories, values, and examples into that language.
 - Keep a human-facing token exact only when the command marks it as literal or machine-readable.
 - Preserve the canonical contract's structure, order, meaning, modality, and completeness.
 - Keep machine formats and code-like tokens exact.
-- Never emit parallel English and German schemas.
-- Retain English technical terms when German is less precise or natural.
+- Never emit parallel schemas in two languages.
+- Retain English technical terms when the answer language is less precise or natural.
