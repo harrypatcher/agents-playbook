@@ -11,14 +11,15 @@ Blindspot or adversarial analysis belongs to `skill-xray`.
 
 ## Context Detection
 
-- If prior conversation exists: analyze ONLY the conversation context.
-- Do NOT explore the project folder unless the conversation topic specifically requires it.
-- If no prior conversation: explore and analyze the current project.
-- Include AGENTS.md, structure, config, and Git history.
+- Analyze the conversation, uploaded files, and project knowledge as the primary context.
+- Inspect a connected repository or local files only when a connector or file tool provides them and the topic requires it.
+- If no usable context exists, ask for the target in one sentence instead of guessing.
 
 ## Methodology
 
-VERIFY current implementation FIRST before suggesting anything. Two categories:
+VERIFY the current state against the available material FIRST before suggesting anything.
+Label any point that the material cannot verify as an assumption.
+Two categories:
 
 **MISSING** — genuinely absent expert practices that would help right now.
 **ALREADY DOING** — correct current practices where an enhancement exists.
@@ -30,6 +31,7 @@ Rules:
 - Focus on immediately helpful expert knowledge that reduces complexity or improves quality now.
 - Show things that improve current work, not prevent future problems.
 - Do NOT suggest what's already implemented correctly.
+
 ## Language
 
 - Thinking and reasoning MUST be in English.
