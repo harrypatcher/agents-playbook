@@ -21,6 +21,7 @@ commands/                      # invoked as slash commands
   /questions-proposal          Generates context-specific proposal questions that offer concrete next actions for selection.
   /questions-solution          Generates context-specific solution questions that identify plausible implementation failures and root-cause fixes.
   /questions-unethical         Generates context-specific unethical questions that expose aggressive but practical code and product advantages.
+  /questions-user              Generates context-specific user questions that expose how the current work affects the people who use it.
   /questions-verification      Generates context-specific verification questions focused on decisive, falsifiable evidence.
 snippets/                      # pasted into global agent instructions
   snippet-q-questions          Q1–Q5 Contract
