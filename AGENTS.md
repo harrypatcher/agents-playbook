@@ -48,6 +48,8 @@ Everything committed here is world-readable, so every change MUST be safe to pub
 - Write all content in English.
 - Put each Markdown sentence on its own line so diffs show changes per sentence.
 - Keep instructions decision-dense and free of filler.
+- Every reference to a skill, command, snippet, file, or tool MUST resolve to an item in this repository or a public resource.
+- Remove dead references, unless the referenced behavior matters, in which case ask the user whether to import it or drop it.
 
 ## Commits
 
