@@ -12,11 +12,11 @@
 - The block MUST be final, preceded by exactly one blank line, followed by nothing, and match this format exactly:
 
 ```
-● **Q1** — [question]
-● **Q2** — [question]
-● **Q3** — [question]
-● **Q4** — [question]
-● **Q5** — [question]
+• **Q1** — [question]
+• **Q2** — [question]
+• **Q3** — [question]
+• **Q4** — [question]
+• **Q5** — [question]
 ```
 
 - Q1–Q5 MUST be consecutive, with no blank lines between question lines.
