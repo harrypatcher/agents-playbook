@@ -32,11 +32,11 @@ Generate context-specific inspiration questions that work like an extended Q1–
 - Ground every question in the context and never invent files, tools, or requirements.
 - Exclude questions that delay, reopen, or imply incomplete work.
 - Propose only and never implement, execute, or modify files in this response.
-- A later selection of an `I` question follows the same rules as a Q selection.
+- A later selection of one of these questions follows the Q selection rules and refers to this list, not an earlier Q1–Q5 block.
 
 THINK HARD and THINK HARDER and ULTRATHINK.
 
-Use the local `I` prefix.
+Use the local `Q` prefix.
 
 ## Language
 
