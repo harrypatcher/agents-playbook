@@ -16,6 +16,7 @@ commands/                                # invoked as slash commands
   /questions-agents-check-understanding  Generates context-specific self-check questions the agent should ask itself to test whether it fully understood the request.
   /questions-decision                    Generates context-specific decision questions that sharpen concrete choices and trade-offs.
   /questions-first-principles            Generates context-specific first-principles questions that expose fundamental truths and assumptions.
+  /questions-goals                       Generates context-specific, thought-provoking questions focused on the user's goals and whether the current work serves them.
   /questions-hacker                      Generates context-specific hacker-style questions using unconventional but practical approaches.
   /questions-inspiration                 Generates context-specific inspiration questions that open distinct, thought-provoking directions like the Q1–Q5 block.
   /questions-monetization                Generates context-specific monetization questions that uncover concrete and practical revenue mechanisms.
