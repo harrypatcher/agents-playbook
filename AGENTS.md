@@ -18,7 +18,8 @@ Everything committed here is world-readable, so every change MUST be safe to pub
 - `README.md` owns the repository overview outside the generated section.
 - `scripts/generate-readme.py` owns the README section between the `GENERATED CONTENTS` markers; never edit it by hand.
 - The `Generate README` workflow runs the script and is triggered manually after adding or changing items.
-- `scripts/package-skills.py` owns the claude.ai upload ZIPs, one per skill, bundled in `release-skills.zip`.
+- `scripts/package-skills.py` bundles every skill and command as `release-skills/<name>.md` in `release-skills.zip`.
+- The script rejects descriptions over 200 characters, the claude.ai limit, and skills with supporting files.
 - The `Release Skills` workflow runs that script manually and publishes the bundle as release `v<version>` from `package.json`.
 - Bump `version` in `package.json` before each release, because the workflow refuses to reuse an existing tag.
 - `package.json` exposes the scripts as `bun run readme` and `bun run package`.

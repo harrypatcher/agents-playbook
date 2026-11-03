@@ -1,6 +1,6 @@
 ---
 name: skill-xray
-description: 'explicit xray/x-ray or adversarial requests, blindspots, improvement potential, inefficiencies, “what am I missing?”, specific critiques/suggestions, adversarial feedback, or multi-perspective analysis.'
+description: 'explicit xray/x-ray or adversarial requests, blindspots, improvement potential, inefficiencies, “what am I missing?”, critiques, or multi-perspective analysis.'
 ---
 
 Use GAN-style thinking: alternate between a generator and discriminator.

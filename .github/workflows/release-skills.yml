@@ -30,4 +30,4 @@ jobs:
                   gh release create "$tag" dist/release-skills.zip \
                     --target "$GITHUB_SHA" \
                     --title "Skills $tag" \
-                    --notes "Extract release-skills.zip, then upload each skill ZIP in Claude under Customize > Skills > Upload a skill."
+                    --notes "Extract release-skills.zip, then add each Markdown file from release-skills/ in Claude under Customize > Skills."

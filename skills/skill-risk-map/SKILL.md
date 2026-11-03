@@ -1,6 +1,6 @@
 ---
 name: skill-risk-map
-description: 'Maps assumptions, failure modes, edge cases, and other risks across fixed lenses. Use when the user asks for a risk map, risk preflight, or what could go wrong, or before an irreversible or high-stakes decision.'
+description: 'Maps assumptions, failure modes, edge cases, and other risks. Use when asked for a risk map, preflight, or what could go wrong, or before irreversible or high-stakes decisions.'
 ---
 
 Run a structured risk map when the user asks for risk or preflight analysis.

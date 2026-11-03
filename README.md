@@ -10,8 +10,8 @@ skills/                                  # loaded when a task matches the descri
   skill-brutal                           Blunt critique; brutal, harsh, roast, no-sugarcoating, or unfiltered requests.
   skill-expert                           Explicit request for expert insights, non-obvious optimizations, or expert-level code/config review.
   skill-obvious                          Requests for practical obvious or non-obvious tips, tricks, hacks, shortcuts, and high-ROI moves.
-  skill-risk-map                         Maps assumptions, failure modes, edge cases, and other risks across fixed lenses. Use when the user asks for a risk map, risk preflight, or what could go wrong, or before an irreversible or high-stakes decision.
-  skill-xray                             Explicit xray/x-ray or adversarial requests, blindspots, improvement potential, inefficiencies, “what am I missing?”, specific critiques/suggestions, adversarial feedback, or multi-perspective analysis.
+  skill-risk-map                         Maps assumptions, failure modes, edge cases, and other risks. Use when asked for a risk map, preflight, or what could go wrong, or before irreversible or high-stakes decisions.
+  skill-xray                             Explicit xray/x-ray or adversarial requests, blindspots, improvement potential, inefficiencies, “what am I missing?”, critiques, or multi-perspective analysis.
 commands/                                # invoked as slash commands
   /questions-agents-check-understanding  Generates context-specific self-check questions the agent should ask itself to test whether it fully understood the request.
   /questions-decision                    Generates context-specific decision questions that sharpen concrete choices and trade-offs.
