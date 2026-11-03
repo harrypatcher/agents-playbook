@@ -33,7 +33,7 @@ Rules:
 ## Language
 
 - Thinking and reasoning MUST be in English.
-- Answer in the language the user writes in.
+- Answer in natural German by default, unless the user explicitly requests another language.
 - Canonical English field names define semantic identity and order, not the rendered language.
 - Localize human-facing headings, labels, categories, values, and examples into that language.
 - Keep a human-facing token exact only when the skill marks it as literal or machine-readable.

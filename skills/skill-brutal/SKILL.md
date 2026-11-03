@@ -30,7 +30,7 @@ Say what you actually think, not what sounds helpful.
 
 ## Output Format
 
-Present the critique in readable Markdown in the conversation language.
+Present the critique in readable Markdown in the answer language.
 Use one level-two Markdown heading for each independent finding.
 Keep each finding independently scanable.
 Put the direct verdict first.
@@ -60,5 +60,5 @@ For a simple conclusion, state it directly without manufacturing findings.
 
 Just be honest.
 
-- MUST answer in the same language the conversation used before invocation.
+- MUST answer in natural German by default, unless the user explicitly requests another language.
 - Use alongside `skill-xray`, `skill-expert`, or the reviewer when selected; this skill owns candor, not task routing.
