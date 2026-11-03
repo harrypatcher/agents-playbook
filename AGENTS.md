@@ -24,6 +24,8 @@ Everything committed here is world-readable, so every change MUST be safe to pub
 
 - Filenames use kebab-case because the filename becomes the slash command name.
 - The frontmatter `description` MUST summarize the command in one sentence.
+- Commands are user-invocable only, so the frontmatter MUST set `disable-model-invocation: true`.
+- Behavior the model should load on its own belongs in a skill, not a command.
 - Use `$ARGUMENTS` for user input instead of hardcoded values.
 
 ## Privacy

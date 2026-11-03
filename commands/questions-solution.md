@@ -1,5 +1,6 @@
 ---
 description: Generates context-specific solution questions that identify plausible implementation failures and root-cause fixes.
+disable-model-invocation: true
 ---
 
 # Solution Questions
@@ -16,7 +17,7 @@ $ARGUMENTS
 - Count words after the `—` marker only.
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
-- Format each line as `● **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
+- Format each line as `• **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
 
 
 Generate context-specific solution questions that identify concrete problems and practical root-cause fixes.

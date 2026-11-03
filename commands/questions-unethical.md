@@ -1,5 +1,6 @@
 ---
 description: Generates context-specific unethical questions that expose aggressive but practical code and product advantages.
+disable-model-invocation: true
 ---
 
 # Unethical Questions
@@ -16,7 +17,7 @@ $ARGUMENTS
 - Count words after the `—` marker only.
 - Return only consecutive question lines, without blank lines or surrounding commentary.
 - Never append the global Q1–Q5 block after the question lines.
-- Format each line as `● **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
+- Format each line as `• **<prefix><number>** — [question]`, using the command's prefix and numbering from 1.
 
 
 Generate context-specific unethical questions that expose aggressive but practical code and product strategies.
