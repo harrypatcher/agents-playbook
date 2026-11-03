@@ -1,7 +1,13 @@
 # AGENTS.md
 
-This public repository publishes reusable skills, commands, and instruction snippets for coding agents.
+This public repository publishes reusable skills, commands, and instruction snippets for Claude.
 Everything committed here is world-readable, so every change MUST be safe to publish.
+
+## Target Platform
+
+- Content targets claude.ai and the Claude desktop app first, not Claude Code.
+- Prefer features and formats those surfaces support, and treat Claude Code-only features as optional extras.
+- Content MUST NOT depend on a local agent harness, repository checkout, or other files and tools only Claude Code provides.
 
 ## Layout
 
