@@ -7,7 +7,7 @@ Reusable skills, commands, and instruction snippets for coding agents.
 
 ```text
 skills/                        # loaded when a task matches the description
-  skill-brutal                 Blunt critique or delegation analysis; brutal, harsh, roast, no-sugarcoating, or unfiltered requests.
+  skill-brutal                 Blunt critique; brutal, harsh, roast, no-sugarcoating, or unfiltered requests.
   skill-expert                 Explicit request for expert insights, non-obvious optimizations, or expert-level code/config review.
   skill-obvious                Requests for practical obvious or non-obvious tips, tricks, hacks, shortcuts, and high-ROI moves.
   skill-risk-map               Maps assumptions, failure modes, edge cases, and other risks across fixed lenses. Use when the user asks for a risk map, risk preflight, or what could go wrong, or before an irreversible or high-stakes decision.

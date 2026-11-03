@@ -7,7 +7,7 @@ Analyze the current work context.
 Surface expert-level insights, optimizations, or approaches the user might not see or know about.
 
 Generic codebase analysis does not select this skill.
-Blindspot or adversarial analysis belongs to `skill-xray`; general code review belongs to the reviewer agent.
+Blindspot or adversarial analysis belongs to `skill-xray`.
 
 ## Context Detection
 

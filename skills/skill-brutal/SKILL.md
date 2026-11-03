@@ -1,10 +1,7 @@
 ---
 name: skill-brutal
-description: "Blunt critique or delegation analysis; brutal, harsh, roast, no-sugarcoating, or unfiltered requests."
+description: "Blunt critique; brutal, harsh, roast, no-sugarcoating, or unfiltered requests."
 ---
-
-Activation may come from explicit user wording or an AGENTS delegation contract.
-Do not require both.
 
 Brutal honesty.
 Give your real opinion, unfiltered, no diplomacy.
@@ -61,4 +58,4 @@ For a simple conclusion, state it directly without manufacturing findings.
 Just be honest.
 
 - MUST answer in natural German by default, unless the user explicitly requests another language.
-- Use alongside `skill-xray`, `skill-expert`, or the reviewer when selected; this skill owns candor, not task routing.
+- Use alongside `skill-xray` or `skill-expert` when selected; this skill owns candor, not task routing.

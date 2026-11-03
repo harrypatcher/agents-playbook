@@ -190,11 +190,9 @@ If no candidate survives, output only the localized equivalent of `No strong hig
 
 ## Scope Boundaries
 
-Use `/tips` for a broad uncategorized tip inventory when obvious/non-obvious classification does not matter.
 Use `skill-expert` for expert-practice or code/config review rather than broad practical-move discovery.
 Use `skill-xray` for adversarial critique, blindspots, and improvement analysis rather than a move inventory.
-Use `/insider` when every finding must be genuinely obscure and supported by Novelty Evidence.
-Use competitive-advantage skills for market position, defensibility, copyability, and competitive edge.
+
 ## Language
 
 - Thinking and reasoning MUST be in English.
@@ -206,5 +204,3 @@ Use competitive-advantage skills for market position, defensibility, copyability
 - Keep machine formats and code-like tokens exact.
 - Never emit parallel schemas in two languages.
 - Retain English technical terms when the answer language is less precise or natural.
-
-General code review belongs to the reviewer agent.

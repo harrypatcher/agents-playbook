@@ -20,7 +20,6 @@ Report obvious and non-obvious issues and blindspots that I, you, or we together
 - Tradeoffs, dependencies, invariants, verification gaps, and regressions also do not select xray by themselves.
 - Expert-level implementation optimization without adversarial or blindspot intent belongs to `skill-expert`.
 - Generic codebase analysis does not invoke this skill.
-- Agent assignments using blindspots or failure modes as delegation hygiene do not invoke this skill.
 - Machine learning, neural-network architecture, medical imaging, and security-scanning tools are unrelated to this skill.
 - If another explicitly loaded companion skill requires a language, that companion language contract takes precedence.
 
