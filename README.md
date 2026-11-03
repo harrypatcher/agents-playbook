@@ -10,6 +10,7 @@ skills/                        # loaded when a task matches the description
   skill-brutal                 Blunt critique or delegation analysis; brutal, harsh, roast, no-sugarcoating, or unfiltered requests.
   skill-expert                 Explicit request for expert insights, non-obvious optimizations, or expert-level code/config review.
   skill-obvious                Requests for practical obvious or non-obvious tips, tricks, hacks, shortcuts, and high-ROI moves.
+  skill-risk-map               Structured risk preflight before action, design, review, migration, tool choice, or recommendation.
   skill-xray                   Explicit xray/x-ray or adversarial requests, blindspots, improvement potential, inefficiencies, “what am I missing?”, specific critiques/suggestions, adversarial feedback, or multi-perspective analysis.
 commands/                      # invoked as slash commands
   /questions-decision          Generates context-specific decision questions that sharpen concrete choices and trade-offs.
