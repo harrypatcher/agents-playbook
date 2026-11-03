@@ -1,10 +1,10 @@
 ---
 name: skill-risk-map
-description: 'structured risk preflight before action, design, review, migration, tool choice, or recommendation.'
+description: 'Maps assumptions, failure modes, edge cases, and other risks across fixed lenses. Use when the user asks for a risk map, risk preflight, or what could go wrong, or before an irreversible or high-stakes decision.'
 ---
 
-Run a structured risk map before action, design, review, migration, refactor, tool choice, or final recommendation.
-Run it when the user asks for deeper preflight thinking.
+Run a structured risk map when the user asks for risk or preflight analysis.
+Also run it before irreversible, expensive, public, or data-destructive decisions.
 
 Use `skill-xray` for adversarial critique.
 Obvious insights do not require this preflight analysis.
@@ -15,8 +15,7 @@ Analyze the target through distinct lenses.
 Do not collapse these into synonyms.
 
 - assumptions: unverified claims that carry the conclusion.
-- constraints: hard rules, limits, policies, APIs, compatibility requirements, or user preferences.
-- constraints bound valid solutions.
+- constraints: hard rules, limits, policies, APIs, compatibility requirements, or user preferences that bound valid solutions.
 - failure modes: concrete ways the plan, code, process, or verification can fail.
 - edge cases: rare but plausible inputs, states, timings, permissions, environments, or user flows.
 - tradeoffs: real cost/benefit tensions between viable options.
@@ -33,7 +32,7 @@ Do not collapse these into synonyms.
 Rules:
 
 - Separate real findings from generic possibilities.
-- Prefer concrete evidence, file paths, commands, APIs, configs, and failure examples.
+- Prefer concrete evidence from the conversation, uploaded files, cited sources, and specific failure examples.
 - If a lens has no meaningful finding, omit it unless the absence is itself important.
 - Distinguish “must fix now” from “watch/verify”.
 - Use findings to adjust the plan, not to create analysis theater.
@@ -41,19 +40,21 @@ Rules:
 ## Language
 
 - Thinking and reasoning MUST be in English.
-- Answer the user in natural German.
+- Answer in the language the user writes in.
 - Canonical English field names define semantic identity and order, not the rendered language.
-- Localize human-facing headings, labels, categories, values, and examples into idiomatic German.
-- Keep a human-facing token exact only when the command marks it as literal or machine-readable.
+- Localize human-facing headings, labels, categories, values, and examples into that language.
+- Keep a human-facing token exact only when the skill marks it as literal or machine-readable.
 - Preserve the canonical contract's structure, order, meaning, modality, and completeness.
 - Keep machine formats and code-like tokens exact.
-- Never emit parallel English and German schemas.
-- Retain English technical terms when German is less precise or natural.
+- Never emit parallel schemas in two languages.
+- Retain English technical terms when the answer language is less precise or natural.
 
 ## Output Format
 
 Use compact sections.
 Do not use markdown tables.
+The template fixes order and labels only.
+Omit lenses without meaningful findings.
 
 ```
 ## Risk Map
